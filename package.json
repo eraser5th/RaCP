@@ -26,6 +26,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=11508817b31d",
+    "stlint": "stylelint \"**/*.css\" --fix",
     "lint-staged": "lint-staged"
   },
   "pre-commit": [
