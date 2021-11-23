@@ -26,7 +26,14 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=11508817b31d",
-    "eslint:format": "eslint --ext .js,.ts,.vue,.jsx,.tsx --ignore-path .gitignore ."
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "*.{ts,tsx}": ["eslint"],
+    "*.{css, scss}": ["stylelint"]
   },
   "browserslist": {
     "production": [
@@ -55,7 +62,10 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "lint-staged": "^12.1.2",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^14.1.0"
   },
   "eslintConfig": {
     "overrides": [
