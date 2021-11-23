@@ -25,7 +25,8 @@
     "lint": "eslint src/* --fix",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=11508817b31d"
+    "chromatic": "npx chromatic --project-token=11508817b31d",
+    "eslint:format": "eslint --ext .js,.ts,.vue,.jsx,.tsx --ignore-path .gitignore ."
   },
   "browserslist": {
     "production": [
@@ -54,7 +55,9 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2"
   },
   "eslintConfig": {
     "overrides": [
@@ -67,5 +70,16 @@
         }
       }
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix"],
+    "*.ts": ["eslint --fix"],
+    "*.jsx": ["eslint --fix"],
+    "*.tsx": ["eslint --fix"]
   }
 }
