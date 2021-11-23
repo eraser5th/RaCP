@@ -21,6 +21,7 @@ const Button: React.VFC<any> = ({
       {...props}
     >
       {label}
+      ahoy!!!!!
     </button>
   );
 };
