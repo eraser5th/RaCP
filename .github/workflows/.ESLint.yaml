@@ -14,6 +14,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Cache Node modules
+        uses: actions/cache@v2
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+
       - name: Install modules
         run: npm i
       - name: Run ESLint
