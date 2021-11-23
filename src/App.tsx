@@ -3,8 +3,8 @@ import Logo from './logo';
 import './App.css';
 
 const App: React.VFC = () => (
-  <div className="App">
-    <header className="App-header">
+  <div className="app">
+    <header className="app-header">
       <Logo />
       <p>
         Edit
@@ -14,7 +14,7 @@ const App: React.VFC = () => (
         and save to reload.
       </p>
       <a
-        className="App-link"
+        className="app-link"
         href="https://reactjs.org"
         target="_blank"
         rel="noopener noreferrer"
