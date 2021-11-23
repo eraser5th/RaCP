@@ -32,8 +32,12 @@
     "lint-staged"
   ],
   "lint-staged": {
-    "*.{ts,tsx}": ["eslint"],
-    "*.{css, scss}": ["stylelint"]
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{css, scss}": [
+      "stylelint"
+    ]
   },
   "browserslist": {
     "production": [
@@ -65,7 +69,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "lint-staged": "^12.1.2",
     "pre-commit": "^1.2.2",
-    "stylelint": "^14.1.0"
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard": "^24.0.0"
   },
   "eslintConfig": {
     "overrides": [
