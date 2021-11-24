@@ -1,12 +1,12 @@
-name: "Chromatic Deployment"
+name: "Chromatic"
 
 on: push
 
 jobs:
-  test:
+  chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
 
       - name: Cache npm dir
         uses: actions/cache@v2
@@ -22,7 +22,10 @@ jobs:
           path: ./node_modules
           key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install modules
+      - name: Install dependencies
         run: npm i
-      - name: Publish Chromatic
-        run: npm run chromatic
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
