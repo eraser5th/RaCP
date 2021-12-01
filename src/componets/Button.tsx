@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const Button: React.VFC<ButtonProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  size = 'md', label, onClick = () => {}, theme = 'light',
+  size = 'md', label, onClick = () => {}, theme = 'primary',
 }) => (
   <button
     type="button"
