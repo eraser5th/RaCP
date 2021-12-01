@@ -33,3 +33,8 @@ Small.args = {
   size: 'sm',
   label: 'Button',
 };
+
+export const LongLabel = Template.bind({});
+LongLabel.args = {
+  label: 'Looooooooooooonnnnng Laaaaabeeeeeeeel Fooooooooooooooooo ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑',
+};
