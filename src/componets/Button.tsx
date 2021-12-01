@@ -1,8 +1,8 @@
 import React from 'react';
-import '../css/button.css';
+import './button.css';
 
 type ButtonProps = {
-  text: string,
+  label: string,
   size?: 'sm' | 'lg',
   onClick?: () => void,
   link?: string
@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const Button: React.VFC<ButtonProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  size = 'lg', text, onClick = () => {}, link = '#',
+  size = 'lg', label, onClick = () => {}, link = '#',
 }) => (
   <button
     type="button"
@@ -18,7 +18,7 @@ const Button: React.VFC<ButtonProps> = ({
     ref={link}
     onClick={onClick}
   >
-    {text}
+    {label}
   </button>
 );
 
