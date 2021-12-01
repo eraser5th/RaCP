@@ -19,3 +19,19 @@
   border-color: #e25c00;
   color: #e25c00;
 }
+
+/* stylelint-disable-next-line selector-class-pattern */
+.btn--lg {
+  width: 340px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 1.375rem;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.btn--sm {
+  width: 240px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}

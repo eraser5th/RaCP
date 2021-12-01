@@ -3,17 +3,18 @@ import './button.css';
 
 type ButtonProps = {
   label: string,
-  size?: 'sm' | 'lg',
+  theme: 'primary' | 'light' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark',
+  size?: 'sm' | 'md' | 'lg',
   onClick?: () => void,
 }
 
 const Button: React.VFC<ButtonProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  size = 'lg', label, onClick = () => {},
+  size = 'md', label, onClick = () => {}, theme = 'light',
 }) => (
   <button
     type="button"
-    className={`btn btn-${size}`}
+    className={`btn btn--${size} btn--${theme}`}
     onClick={onClick}
   >
     {label}
