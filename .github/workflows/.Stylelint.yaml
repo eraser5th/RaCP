@@ -1,4 +1,4 @@
-name: ESLintCI
+name: StylelintCI
 on: push
 jobs:
   test:
@@ -22,5 +22,5 @@ jobs:
 
       - name: Install modules
         run: npm i
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run Stylelint
+        run: npm run stlint
