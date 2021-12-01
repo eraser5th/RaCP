@@ -25,8 +25,8 @@ export default {
 // eslint-disable-next-line react/jsx-props-no-spreading
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Common = Template.bind({});
-Common.args = {
+export const Primary = Template.bind({});
+Primary.args = {
   label: 'Button',
   size: 'md',
 
@@ -47,4 +47,22 @@ Small.args = {
 export const LongLabel = Template.bind({});
 LongLabel.args = {
   label: 'Looooooooooooonnnnng Laaaaabeeeeeeeel Fooooooooooooooooo ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑',
+};
+
+export const Light = Template.bind({});
+Light.args = {
+  label: 'Button',
+  theme: 'light',
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Button',
+  theme: 'secondary',
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  label: 'Button',
+  theme: 'success',
 };
