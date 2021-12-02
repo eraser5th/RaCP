@@ -19,6 +19,12 @@ export default {
         'sm', 'md', 'lg',
       ],
     },
+    rounded: {
+      control: 'boolean',
+    },
+    withArrow: {
+      control: 'boolean',
+    },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -65,4 +71,16 @@ export const Success = Template.bind({});
 Success.args = {
   label: 'Button',
   theme: 'success',
+};
+
+export const Rounded = Template.bind({});
+Rounded.args = {
+  label: 'Button',
+  rounded: true,
+};
+
+export const Arrow = Template.bind({});
+Arrow.args = {
+  label: 'Button',
+  withArrow: true,
 };

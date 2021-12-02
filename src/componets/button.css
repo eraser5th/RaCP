@@ -32,6 +32,27 @@
   font-size: 1rem;
 }
 
+.btn--rounded {
+  border-radius: 10px;
+}
+
+.btn--arrow-right {
+  position: relative;
+  padding-right: 2em;
+  padding-left: 1.38em;
+}
+
+.btn--arrow-right::after {
+  position: absolute;
+  top: 50%;
+  right: 0.83em;
+
+  /* font-family: "Font Awesome 5Free"; */
+  font-weight: 900;
+  content: "\2794";
+  transform: translateY(-50%);
+}
+
 .btn:focus {
   color: var(--theme-primary);
   background-color: var(--theme-light);
