@@ -1,20 +1,9 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recess-order"
-  ],
-  "plugins": [
-    "stylelint-selector-bem-pattern"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "plugins": ["stylelint-selector-bem-pattern"],
   "rules": {
-    "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        "combined": "^\\.combined-{componentName}-[a-z]+$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    }
+    "max-empty-lines": 2,
+    "selector-class-pattern": "[a-z]+[--|__][A-Z-a-z]+"
   },
   "ignoreFiles": ["./build/static/css/*.css"]
 }
