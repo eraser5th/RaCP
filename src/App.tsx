@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from './logo';
 import './App.css';
 import Header from './componets/Header';
+import Footer from './componets/Footer';
 
 const App: React.VFC = () => (
   <div className="app">
@@ -24,6 +25,7 @@ const App: React.VFC = () => (
         Learn React
       </a>
     </header>
+    <Footer links={['link1', 'link2']} />
   </div>
 );
 
