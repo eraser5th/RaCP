@@ -19,6 +19,12 @@ export default {
         'sm', 'md', 'lg',
       ],
     },
+    rounded: {
+      control: 'boolean',
+    },
+    withArrow: {
+      control: 'boolean',
+    },
   },
 } as ComponentMeta<typeof Button>;
 

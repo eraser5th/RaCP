@@ -3,7 +3,7 @@ import './button.css';
 
 type ButtonProps = {
   label: string,
-  theme: 'primary' | 'light' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark',
+  theme?: 'primary' | 'light' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark',
   size?: 'sm' | 'md' | 'lg',
   rounded?: boolean,
   withArrow?: boolean,
@@ -17,8 +17,8 @@ const Button: React.VFC<ButtonProps> = ({
   let classes = 'btn ';
   classes += `btn--${size} `;
   classes += `btn--${theme} `;
-  classes += rounded ? `btn--${rounded} ` : '';
-  classes += withArrow ? `btn--${withArrow} ` : '';
+  classes += rounded ? 'btn--rounded ' : '';
+  classes += withArrow ? 'btn--arrow-right ' : '';
   return (
     <button
       type="button"
