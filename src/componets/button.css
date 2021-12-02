@@ -2,10 +2,10 @@
 
 .btn {
   display: inline-block;
-  width: 300px;
+  min-width: min(100%, 240px);
   max-width: 100%;
   height: auto;
-  min-height: 4rem;
+  min-height: 3.75rem;
   padding: 10px;
   font-size: 1.125rem;
   color: var(--theme-light);
@@ -15,21 +15,23 @@
   background-color: var(--theme-primary);
   border: 4px solid transparent;
   box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-  transition: 0.25;
+  transition: 0.25s;
+}
+
+.btn--md {
+  font-size: 1.125rem;
 }
 
 .btn--lg {
-  width: 340px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  min-width: min(100%, 300px);
+  min-height: 4.5rem;
   font-size: 1.375rem;
 }
 
 .btn--sm {
-  width: 240px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 1rem;
+  min-width: min(100%, 200px);
+  min-height: 3rem;
+  font-size: 0.875rem;
 }
 
 .btn--rounded {
@@ -53,9 +55,10 @@
   transform: translateY(-50%);
 }
 
-.btn:focus {
+.btn:hover {
   color: var(--theme-primary);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-primary);
 }
 
 .btn--light {
@@ -76,6 +79,7 @@
 .btn--secondary:hover {
   color: var(--theme-secondary);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-secondary);
 }
 
 .btn--success {
@@ -86,6 +90,7 @@
 .btn--success:hover {
   color: var(--theme-success);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-success);
 }
 
 .btn--danger {
@@ -96,16 +101,18 @@
 .btn--danger:hover {
   color: var(--theme-danger);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-danger);
 }
 
 .btn--warning {
   color: var(--theme-light);
-  background-color: var(--theme-danger);
+  background-color: var(--theme-warning);
 }
 
 .btn--warning:hover {
-  color: var(--theme-danger);
+  color: var(--theme-warning);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-warning);
 }
 
 .btn--info {
@@ -116,6 +123,7 @@
 .btn--info:hover {
   color: var(--theme-info);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-info);
 }
 
 .btn--dark {
@@ -126,4 +134,5 @@
 .btn--dark:hover {
   color: var(--theme-dark);
   background-color: var(--theme-light);
+  border: 2px solid var(--theme-dark);
 }
