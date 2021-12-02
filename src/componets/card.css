@@ -1,0 +1,47 @@
+.card {
+  width: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 10px 5px rgb(0 0 0 / 15%);
+}
+
+.card:hover {
+  box-shadow: 5px 5px 14px 7px rgb(0 0 0 / 15%);
+  transition: 0.2s;
+}
+
+.card:active {
+  box-shadow: none;
+  transition: 0.05s;
+}
+
+.card--rounded {
+  border-radius: 12px;
+}
+
+.card--title {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+}
+
+.card--explain {
+  padding: 5px 20px;
+  font-size: 1rem;
+}
+
+.card--image {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card--image + .card--title {
+  padding-top: 10px;
+}
+
+.card--image ~ .card--explain {
+  padding-top: 0;
+}
