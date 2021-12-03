@@ -1,5 +1,12 @@
 .header {
   width: 100vw;
-  height: 200px;
+  height: 3.25rem;
+  text-decoration: none;
   background-color: #666;
+}
+
+.header--nav {
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
 }

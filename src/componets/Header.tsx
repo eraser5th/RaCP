@@ -9,8 +9,9 @@ const Header: React.VFC<HeaderProps> = ({
   links,
 }) => (
   <header className="header">
-    {links.map((link) => (<a href={link}>link</a>))}
-    this is header
+    <nav className="header--nav">
+      {links.map((link) => (<a href={link}>link</a>))}
+    </nav>
   </header>
 );
 
