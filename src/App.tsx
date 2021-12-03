@@ -8,29 +8,31 @@ const App: React.VFC = () => (
   <div className="app">
     <Header links={['link1', 'link2']} />
     <main className="main">
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
-      <Card rounded />
+      <div className="main--inner">
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+        <Card rounded />
+      </div>
     </main>
     <Footer links={['link1', 'link2']} />
   </div>

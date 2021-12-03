@@ -1,9 +1,20 @@
 main {
+  padding-top: 40px;
+  background: #58a;
+  background-image:
+    linear-gradient(white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0),
+    linear-gradient(hsl(0deg 0% 100% / 30%) 1px transparent 0),
+    linear-gradient(90deg, hsla(0deg 0% 100% 30%) 1px, transparent 0);
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+}
+
+.main--inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px;
+  justify-content: space-evenly;
   width: min(100%, 1280px);
-  padding-top: 40px;
   padding-right: 24px;
   padding-left: 24px;
   margin-right: auto;
