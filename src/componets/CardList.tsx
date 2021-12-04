@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Button from './Button';
-import Card from './Card';
 import './cardList.css';
 import ComponentViewCard from './ComponentViewCard';
 
-const CardList: React.VFC<{cardList: any[]}> = ({ cardList }) => (
+type CardListProps = {
+  cardList: {
+    onClick?: string;
+    viewComponent: ReactElement;
+  }[]
+}
+const CardList: React.VFC<CardListProps> = ({ cardList }) => (
   <div className="card-list">
-    {cardList.map((item) => (
+    {cardList.map(({ onClick, viewComponent }) => (
       <ComponentViewCard>
-        <Button label="button" />
+        {viewComponent}
       </ComponentViewCard>
     ))}
   </div>
