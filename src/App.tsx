@@ -3,6 +3,7 @@ import './App.css';
 import Header from './componets/Header';
 import Footer from './componets/Footer';
 import Card from './componets/Card';
+import CardList from './componets/CardList';
 
 const App: React.VFC = () => {
   const length = 18;
@@ -11,10 +12,7 @@ const App: React.VFC = () => {
       <Header links={['link1', 'link2']} />
       <main className="main">
         <div className="main--inner">
-          <div className="main--cards">
-            {new Array(length).fill(0).map(() => <Card rounded />)}
-            {new Array(length % 4).fill(0).map(() => <div style={{ width: '300px', height: '300px' }} />)}
-          </div>
+          <CardList cardList={[1, 2, 3, 4, 5]} />
         </div>
       </main>
       <Footer links={['link1', 'link2']} />
