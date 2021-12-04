@@ -1,8 +1,9 @@
 main {
   padding-top: 40px;
+  padding-bottom: 40px;
   background: #58a;
   background-image:
-    linear-gradient(white 2px, transparent 0),
+    linear-gradient(to right, white, 10px, transparent 0),
     linear-gradient(90deg, white 2px, transparent 0),
     linear-gradient(hsl(0deg 0% 100% / 30%) 1px transparent 0),
     linear-gradient(90deg, hsla(0deg 0% 100% 30%) 1px, transparent 0);
@@ -10,13 +11,30 @@ main {
 }
 
 .main--inner {
+  width: min(90%, 1280px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main--cards {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  justify-content: space-evenly;
-  width: min(100%, 1280px);
+  gap: 20px;
+  justify-content: center;
+  max-width: auto;
+}
+
+/*
+.main--inner {
+  display: grid;
+  grid-template-rows: 300px auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  place-items: center;
+  max-width: min(90%, 1280px);
   padding-right: 24px;
   padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
 }
+*/
