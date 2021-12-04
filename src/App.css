@@ -23,18 +23,3 @@ main {
   justify-content: center;
   max-width: auto;
 }
-
-/*
-.main--inner {
-  display: grid;
-  grid-template-rows: 300px auto;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  place-items: center;
-  max-width: min(90%, 1280px);
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-right: auto;
-  margin-left: auto;
-}
-*/
