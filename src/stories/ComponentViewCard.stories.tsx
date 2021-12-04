@@ -21,10 +21,10 @@ const Template: ComponentStory<
 
 export const ButtonCard = Template.bind({});
 ButtonCard.args = {
-  child: <Button label="button" />,
+  children: <Button label="button" />,
 };
 
 export const CardCard = Template.bind({});
 CardCard.args = {
-  child: <Card />,
+  children: <Card />,
 };

@@ -2,18 +2,22 @@ import React, { ReactElement } from 'react';
 import './component-view-card.css';
 
 type ComponentViewCardProps = {
-  child: ReactElement,
+  children: ReactElement,
   rounded?: boolean,
 }
 
 const ComponentViewCard: React.VFC<ComponentViewCardProps> = ({
-  child, rounded,
-}) => (
-  <div className="component-view-card">
-    <div className="component-view-card--view-component">
-      {child}
+  children, rounded,
+}) => {
+  let classes = 'component-view-card ';
+  classes += rounded ? 'component-view-card--rounded' : '';
+  return (
+    <div className={classes}>
+      <div className="component-view-card--view-component">
+        {children}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ComponentViewCard;
