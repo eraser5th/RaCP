@@ -16,6 +16,7 @@
 .card:active {
   box-shadow: none;
   transition: 0.05s;
+  transform: scale(1.02);
 }
 
 .card--rounded {
