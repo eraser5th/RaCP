@@ -2,12 +2,6 @@ main {
   min-height: 85vh;
   padding-top: 40px;
   padding-bottom: 80px;
-  background-image:
-    linear-gradient(to right, white, 10px, transparent 0),
-    linear-gradient(90deg, white 2px, transparent 0),
-    linear-gradient(hsl(0deg 0% 100% / 30%) 1px transparent 0),
-    linear-gradient(90deg, hsla(0deg 0% 100% 30%) 1px, transparent 0);
-  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
 }
 
 .main--inner {
