@@ -22,11 +22,9 @@ const Template: ComponentStory<
 export const ButtonCard = Template.bind({});
 ButtonCard.args = {
   child: <Button label="button" />,
-  title: 'aaa',
 };
 
 export const CardCard = Template.bind({});
 CardCard.args = {
   child: <Card />,
-  title: 'card',
 };
