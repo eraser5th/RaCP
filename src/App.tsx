@@ -12,7 +12,7 @@ const App: React.VFC = () => {
       <Header links={['link1', 'link2']} />
       <main className="main">
         <div className="main--inner">
-          <CardList cardList={[1, 2, 3, 4, 5]} />
+          <CardList cardList={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]} />
         </div>
       </main>
       <Footer links={['link1', 'link2']} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import './footer.css';
 
 type FooterProps = {
     links: string[]
@@ -10,7 +10,7 @@ const Footer: React.VFC<FooterProps> = ({
 }) => (
   <footer className="footer">
     {links.map((link) => (<a href={link}>link</a>))}
-    this is header
+    this is footer
   </footer>
 );
 

@@ -1,6 +1,7 @@
 .header {
   width: 100vw;
   height: 3.25rem;
+  min-height: 8%;
   text-decoration: none;
   background-color: #666;
 }
