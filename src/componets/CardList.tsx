@@ -12,7 +12,7 @@ type CardListProps = {
 const CardList: React.VFC<CardListProps> = ({ cardList }) => (
   <div className="card-list">
     {cardList.map(({ onClick, viewComponent }) => (
-      <ComponentViewCard>
+      <ComponentViewCard rounded>
         {viewComponent}
       </ComponentViewCard>
     ))}

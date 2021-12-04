@@ -22,7 +22,28 @@ const cardList: CardList = [
     viewComponent: <Button label="rounded button" rounded />,
   },
   {
-    viewComponent: <Button label="Big Button" />,
+    viewComponent: <Button label="Large Button" size="lg" />,
+  },
+  {
+    viewComponent: <Button label="Small Button" size="sm" />,
+  },
+  {
+    viewComponent: <Button label="Warn Button" theme="warning" />,
+  },
+  {
+    viewComponent: <Button label="Danger Button" theme="danger" />,
+  },
+  {
+    viewComponent: <Button label="Light Button" theme="light" />,
+  },
+  {
+    viewComponent: <Button label="Dark Button" theme="dark" />,
+  },
+  {
+    viewComponent: <Button label="Info Button" theme="info" />,
+  },
+  {
+    viewComponent: <Button label="Success Button" theme="success" />,
   },
 ];
 const App: React.VFC = () => (
