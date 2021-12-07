@@ -7,7 +7,6 @@
   transition: 0.2s;
 }
 
-
 .component-view-card:hover {
   box-shadow: 5px 5px 14px 7px rgb(0 0 0 / 15%);
   transition: 0.2s;
