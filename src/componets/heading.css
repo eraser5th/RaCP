@@ -43,3 +43,9 @@
   font-weight: bold;
   border-left: 2px solid #e25c00;
 }
+
+.level5-heading {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #e25c00;
+}
