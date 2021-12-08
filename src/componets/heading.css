@@ -30,3 +30,9 @@
   border-bottom: 4px solid #e25c00;
 }
 
+.level3-heading {
+  padding-bottom: 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #e25c00;
+}
