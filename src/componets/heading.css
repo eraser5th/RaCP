@@ -36,3 +36,10 @@
   font-weight: bold;
   border-bottom: 2px solid #e25c00;
 }
+
+.level4-heading {
+  padding-left: 6px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-left: 2px solid #e25c00;
+}
