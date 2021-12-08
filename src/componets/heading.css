@@ -24,10 +24,9 @@
 }
 
 .level2-heading {
-  padding: 30px 10px;
+  padding-bottom: 10px;
   font-size: 1.75em;
-  color: #fff;
-  text-align: center;
-  background-color: #e25c00;
+  font-weight: bold;
+  border-bottom: 4px solid #e25c00;
 }
 
