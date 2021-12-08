@@ -7,22 +7,30 @@ import CardList from './componets/CardList';
 import Button from './componets/Button';
 
 type CardList = {
-  onClick?: string;
-  viewComponent: ReactElement;
+  onClick?: string,
+  viewComponent: ReactElement,
+  row?: 1 | 2 | 3 | 4,
+  col?: 1 | 2 | 3 | 4,
 }[]
 
 const cardList: CardList = [
   {
     viewComponent: <Button label="primary button" />,
+    row: 1,
+    col: 3,
   },
   {
     viewComponent: <Button label="secondary button" theme="secondary" />,
+    row: 2,
+    col: 3,
   },
   {
     viewComponent: <Button label="rounded button" rounded />,
+    row: 3,
   },
   {
     viewComponent: <Button label="Large Button" size="lg" />,
+    row: 4,
   },
   {
     viewComponent: <Button label="Small Button" size="sm" />,
