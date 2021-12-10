@@ -1,0 +1,55 @@
+.level1-heading {
+  padding: 30px 10px;
+  font-size: 1.75em;
+  color: #fff;
+  text-align: center;
+  background-color: #e25c00;
+}
+
+.inner1-heading__inner {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+}
+
+.level1-heading__inner::after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  content: "";
+  background-color: currentColor;
+  transform: translatex (-50%);
+}
+
+.level2-heading {
+  padding-bottom: 10px;
+  font-size: 1.75em;
+  font-weight: bold;
+  border-bottom: 4px solid #e25c00;
+}
+
+.level3-heading {
+  padding-bottom: 6px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #e25c00;
+}
+
+.level4-heading {
+  padding-left: 6px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-left: 2px solid #e25c00;
+}
+
+.level5-heading {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #e25c00;
+}
+
+.level6-heading {
+  font-size: 1.125rem;
+}
