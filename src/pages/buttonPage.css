@@ -1,0 +1,9 @@
+.view-component {
+  padding: 40px;
+}
+
+.code-block {
+  padding-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
