@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
-import Header from '../componets/Header';
-import Footer from '../componets/Footer';
-import Button from '../componets/Button';
-import { ReactCode } from '../stories/ReactCodeBlock.stories';
-import { CSSCode } from '../stories/CSSCodeBlock.stories';
+import Header from './componets/Header';
+import Footer from './componets/Footer';
+import Button from './componets/Button';
+import { ReactCode } from './stories/ReactCodeBlock.stories';
+import { CSSCode } from './stories/CSSCodeBlock.stories';
 
 const code = `
 import React, { ReactElement } from 'react';
@@ -40,7 +40,7 @@ const css = `
 }
 `;
 
-const App: React.VFC = () => (
+const componentViewPage: React.VFC = () => (
   <div className="app">
     <Header links={['link1', 'link2']} />
     <main className="main">
@@ -52,4 +52,4 @@ const App: React.VFC = () => (
   </div>
 );
 
-export default App;
+export default componentViewPage;
