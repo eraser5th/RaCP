@@ -1,18 +1,20 @@
 import React, { ReactElement } from 'react';
-import {
-  Routes, Route, Link,
-} from 'react-router-dom';
-import { Switch } from 'react-router';
+import { Link } from 'react-router-dom';
+import { readFileSync } from 'fs';
 import './cardList.css';
 import ComponentViewCard from './ComponentViewCard';
+
+console.log(readFileSync);
 
 type CardListProps = {
   cardList: {
     onClick?: string;
     viewComponent: ReactElement;
+    codeViewPage: ReactElement;
     path: string,
   }[]
 }
+
 const CardList: React.VFC<CardListProps> = ({ cardList }) => (
   <div className="card-list">
     {cardList.map(({ onClick, viewComponent, path }) => (
@@ -22,13 +24,6 @@ const CardList: React.VFC<CardListProps> = ({ cardList }) => (
         </ComponentViewCard>
       </Link>
     ))}
-    <Switch>
-      {cardList.map(({ onClick, viewComponent, path }) => (
-        <Route path={path}>
-          {viewComponent}
-        </Route>
-      ))}
-    </Switch>
   </div>
 );
 

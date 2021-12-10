@@ -1,0 +1,15 @@
+{
+    "cardList": [
+          {
+            "viewComponent": {
+                "kind": "button",
+                "theme": "success"
+            },
+            "path": "successbutton",
+            "filepath": {
+              "react": "componets/Button.tsx",
+              "css": "componets/button.css"
+            }
+          }
+        ]
+}

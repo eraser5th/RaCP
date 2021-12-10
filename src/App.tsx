@@ -1,68 +1,83 @@
 import React, { ReactElement } from 'react';
+import { Route, Routes } from 'react-router';
 import './App.css';
 import Header from './componets/Header';
 import Footer from './componets/Footer';
 import CardList from './componets/CardList';
 import Button from './componets/Button';
+import ButtonPage from './pages/ButtonPage';
 
 type CardList = {
   onClick?: string;
   viewComponent: ReactElement;
+  codeViewPage: ReactElement;
   path: string
 }[]
 
 const cardList: CardList = [
   {
-    viewComponent: <Button label="primary button" />,
-    path: 'primarybutton',
+    onClick: '',
+    viewComponent: <Button theme="primary" label="Primary" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/primary-button',
   },
   {
-    viewComponent: <Button label="secondary button" theme="secondary" />,
-    path: 'secondarybutton',
+    onClick: '',
+    viewComponent: <Button theme="secondary" label="Secondary" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/secondary-button',
   },
   {
-    viewComponent: <Button label="rounded button" rounded />,
-    path: 'roundedbutton',
+    onClick: '',
+    viewComponent: <Button theme="success" label="Success" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/success-button',
   },
   {
-    viewComponent: <Button label="Large Button" size="lg" />,
-    path: 'largebutton',
+    onClick: '',
+    viewComponent: <Button theme="danger" label="Danger" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/danger-button',
   },
   {
-    viewComponent: <Button label="Small Button" size="sm" />,
-    path: 'smallbutton',
+    onClick: '',
+    viewComponent: <Button theme="warning" label="Warning" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/warning-button',
   },
   {
-    viewComponent: <Button label="Warn Button" theme="warning" />,
-    path: 'warnbutton',
+    onClick: '',
+    viewComponent: <Button theme="info" label="Info" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/info-button',
   },
   {
-    viewComponent: <Button label="Danger Button" theme="danger" />,
-    path: 'dangerbutton',
+    onClick: '',
+    viewComponent: <Button theme="light" label="Light" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/light-button',
   },
   {
-    viewComponent: <Button label="Light Button" theme="light" />,
-    path: 'lightbutton',
-  },
-  {
-    viewComponent: <Button label="Dark Button" theme="dark" />,
-    path: 'darkbutton',
-  },
-  {
-    viewComponent: <Button label="Info Button" theme="info" />,
-    path: 'infobutton',
-  },
-  {
-    viewComponent: <Button label="Success Button" theme="success" />,
-    path: 'successbutton',
+    onClick: '',
+    viewComponent: <Button theme="dark" label="Dark" rounded />,
+    codeViewPage: <ButtonPage />,
+    path: '/dark-button',
   },
 ];
+
 const App: React.VFC = () => (
   <div className="app">
     <Header links={['link1', 'link2']} />
     <main className="main">
       <div className="main--inner">
-        <CardList cardList={cardList} />
+        <Routes>
+          <Route path="/" element={<CardList cardList={cardList} />} />
+          {cardList.map(({
+            viewComponent, path, codeViewPage,
+          }, i) => (
+            <Route path={path} element={codeViewPage} />
+          ))}
+        </Routes>
       </div>
     </main>
     <Footer links={['link1', 'link2']} />
