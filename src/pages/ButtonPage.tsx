@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../componets/Button';
 import CodeBlock from '../componets/CodeBlock';
+import Heading from '../componets/Heading';
+import './buttonPage.css';
 
 const reactCode = `
 import React from 'react';
@@ -182,9 +184,18 @@ const { react: ReactCodeBlock, CSS: CSSCodeBlock } = CodeBlock;
 
 const PrimaryButtonPage: React.VFC = () => (
   <div>
-    <Button label="Primary" theme="primary" size="md" rounded />
-    <ReactCodeBlock code={reactCode} />
-    <CSSCodeBlock code={CSSCode} />
+    <Heading text="Button Component" level={2} />
+    <div className="view-vomponent">
+      <Button label="Primary" theme="primary" size="md" rounded />
+    </div>
+    <div className="code-block">
+      <Heading text="React Code" level={3} />
+      <ReactCodeBlock code={reactCode} />
+    </div>
+    <div className="code-block">
+      <Heading text="CSS Code" level={3} />
+      <CSSCodeBlock code={CSSCode} />
+    </div>
   </div>
 );
 
