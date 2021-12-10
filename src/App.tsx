@@ -72,9 +72,7 @@ const App: React.VFC = () => (
       <div className="main--inner">
         <Routes>
           <Route path="/" element={<CardList cardList={cardList} />} />
-          {cardList.map(({
-            viewComponent, path, codeViewPage,
-          }, i) => (
+          {cardList.map(({ path, codeViewPage }) => (
             <Route path={path} element={codeViewPage} />
           ))}
         </Routes>
