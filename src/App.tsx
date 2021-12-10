@@ -67,7 +67,7 @@ const cardList: CardList = [
 
 const App: React.VFC = () => (
   <div className="app">
-    <Header links={['link1', 'link2']} />
+    <Header links={[]} />
     <main className="main">
       <div className="main--inner">
         <Routes>
@@ -78,7 +78,7 @@ const App: React.VFC = () => (
         </Routes>
       </div>
     </main>
-    <Footer links={['link1', 'link2']} />
+    <Footer links={[]} />
   </div>
 );
 

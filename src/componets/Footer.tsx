@@ -10,7 +10,6 @@ const Footer: React.VFC<FooterProps> = ({
 }) => (
   <footer className="footer">
     {links.map((link) => (<a href={link}>link</a>))}
-    this is footer
   </footer>
 );
 
