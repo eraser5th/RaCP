@@ -249,6 +249,54 @@ const cardList: CardList = [
     codeViewPage: <ButtonPage />,
     path: '/large-dark-button',
   },
+  {
+    onClick: '',
+    viewComponent: <Button theme="primary" label="Large Primary A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-primary-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="secondary" label="Large Secondary A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-secondary-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="success" label="Large Success A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-success-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="danger" label="Large Danger A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-danger-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="warning" label="Large Warning A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-warning-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="info" label="Large Info A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-info-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="light" label="Large Light A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-light-arrow-button',
+  },
+  {
+    onClick: '',
+    viewComponent: <Button theme="dark" label="Large Dark A" size="lg" withArrow />,
+    codeViewPage: <ButtonPage />,
+    path: '/large-dark-arrow-button',
+  },
 ];
 
 const App: React.VFC = () => (
